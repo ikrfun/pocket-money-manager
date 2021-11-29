@@ -7,5 +7,8 @@ import ledger
 
 
 urlpatterns = [
-    path('', views.index, name = 'index'),  
+    path('', views.index, name = 'index'),
+    path('list', views.list.as_view(), name = 'list'),
+    
+    
 ]
