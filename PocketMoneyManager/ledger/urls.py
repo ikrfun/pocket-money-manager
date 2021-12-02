@@ -8,7 +8,7 @@ import ledger
 
 urlpatterns = [
     path('', views.index, name = 'index'),
-    path('list', views.list.as_view(), name = 'list'),
-    
+    path('list/', views.list.as_view(), name = 'list'),
+    path('pay_form/',views.pay_form,name = 'pay_form')
     
 ]
