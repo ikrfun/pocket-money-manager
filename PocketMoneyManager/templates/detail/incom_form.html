@@ -1,5 +1,7 @@
 {% extends 'base/form_base.html' %}
-
+{% block title%}
+incom_form
+{% endblock %}
 {% block body%}
    <h2> 収入を入力<h2>
    <form method='POST' class = 'post'>{% csrf_token %}
