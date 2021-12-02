@@ -1,0 +1,9 @@
+{% extends 'base/form_base.html' %}
+
+{% block body%}
+   <h2> 収入を入力<h2>
+   <form method='POST' class = 'post'>{% csrf_token %}
+       {[form.as_p]}
+       <button type='submit' class = "save btn btn-default">追加</button>
+   </form>
+{% endblock %}
