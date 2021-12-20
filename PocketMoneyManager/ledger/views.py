@@ -14,6 +14,11 @@ class pay_list(ListView):
     context_object_name = 'pay_list'
     template_name = 'detail/pay_list.html'
 
+class pay_list(ListView):
+    queryset = Incom.objects.all()
+    context_object_name = 'incom_list'
+    template_name = 'detail/incom_list.html'
+
 def pay_form(request):
     form = PayForm()
     return render(request, 'detail/pay_form.html',{'form':form})
