@@ -1,0 +1,25 @@
+{% extends 'base/form_base.html' %}
+{% block title%}
+   pay_list
+{% endblock %}
+{% block body%}
+<table class="table">
+    <thead>
+      <tr><th>支払い</th></tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>日付</td>
+          <td>支払額</td>
+          <td>理由</td>
+        </tr>
+        {% for pay in pay_list %}
+        <tr>
+            <td>{{pay.date}}</td>
+            <td>{{pay.price}}</td>
+            <td>{{pay.name}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
